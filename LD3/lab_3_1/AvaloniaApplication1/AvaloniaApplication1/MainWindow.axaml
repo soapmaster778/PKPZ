@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AvaloniaApplication1.MainWindow"
+        Width="500" Height="300"
+        Title="Лабораторна робота №3 — Підрахунок символів">
+
+    <StackPanel Margin="20" Spacing="10">
+        <TextBlock Text="Введіть англійський текст:" FontSize="16"/>
+        <TextBox Name="InputTextBox" AcceptsReturn="True" Height="100" TextWrapping="Wrap"/>
+        
+        <Button Name="CountButton" Content="Порахувати" Width="150" HorizontalAlignment="Left" Click="CountButton_Click"/>
+
+        <Border Background="#000000" Padding="10" CornerRadius="5">
+            <TextBlock Name="ResultTextBlock" FontSize="14" Text="Результат з’явиться тут."/>
+        </Border>
+    </StackPanel>
+</Window>
